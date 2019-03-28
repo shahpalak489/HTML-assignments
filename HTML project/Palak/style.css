@@ -1,0 +1,48 @@
+
+h4 {
+	color: blue;
+	margin: 50px; /*The CSS margin property defines a margin (space) outside the border:*/
+	border: 2px dotted red;
+}
+
+p {
+	color: red;
+	padding: 20px; /*The CSS padding property defines a padding (space) between the text and the border:*/
+	border: blue 2px solid;
+}
+
+#p1{
+	background-color: yellow;
+}
+
+.p2{
+	color: green;
+}
+h5.error{
+	background-color: green;
+}
+
+h6.error1{
+	background-color: pink;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
