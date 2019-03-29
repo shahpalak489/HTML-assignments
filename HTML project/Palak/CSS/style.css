@@ -25,24 +25,10 @@ h5.error{
 h6.error1{
 	background-color: pink;
 }
-
-a:link {
-  color: green;
-  background-color: transparent;
+h3, h1 {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
   text-decoration: none;
-}
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Images</title>
+		<link rel="stylesheet" type="text/css" href="css/images.css">
+		<style type="text/css">
+			.first {
+			  width: 90%;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- precedency in increasing order 1)attribute, 2)external 3)intenal, 4)inline -->
+		<img src="images/x.jpg" alt="Flowers in Chania"><hr>
+
+		<p>The image below has the width attribute set to 128 pixels, but the stylesheet overrides it, and sets the width to 100%.</p>
+		<img class="first" src="images/x.jpg" alt="x Icon" width="128" height="128"> <!-- using attribute -->
+
+		<p>The image below uses the style attribute, where the width is set to 128 pixels which overrides the stylesheet:</p>
+		<img class="first" src="images/x.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"> <!-- using style -->
+		<hr>
+		<!-- animated images -->
+		<img src="programming.gif" alt="Computer man" style="width:48px;height:48px;"><hr>
+		<!-- image as a link -->
+		<a href="default.asp">
+		  <img src="images/x.jpg" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+		</a> <hr>
+
+		<!-- float property -->
+		<h2>Floating Images</h2>
+		<p><strong>Float the image to the right:</strong></p>
+		<p>
+			<img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+			A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+		</p>
+		<p><strong>Float the image to the left:</strong></p>
+		<p>
+			<img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+			A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.  
+		</p>
+
+		<!-- map images --> 
+		<h2>Image Maps</h2> <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2 -->
+		<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+		<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+		<map name="workmap">
+		  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+		  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+		  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+		</map>
+
+		<!-- background image -->
+		<h2>Background Image</h2>
+		<p style="background-image:url('clouds.jpg');"> huhuhuhuhuhuhugytfmhghjfhdgjgfdghfdghgfdghjgfds</p>
+
+		<!-- picture element --> <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture -->
+		<picture>
+		  <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+		  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+		  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+		</picture>
+
+	</body>
+</html>
