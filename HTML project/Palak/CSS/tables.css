@@ -1,0 +1,26 @@
+table, td, th {
+	border: 1px solid blue;
+    border-collapse: collapse;
+    padding: 10px;
+    
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*table {
+  border-spacing: 15px; data inside table will move
+  margin: 15px; from top and left while object WILL move
+}*/
+
+table#t01 tr:nth-child(even) {
+  background-color: blue;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: pink;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
