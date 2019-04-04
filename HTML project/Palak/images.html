@@ -7,6 +7,50 @@
 			.first {
 			  width: 90%;
 			}
+			#example1 {
+				  border: 10px dotted black;
+				  padding: 15px;
+				  background: lightblue;
+				  background-clip: border-box;  
+				}
+
+				#example2 {
+				  border: 10px dotted black;
+				  padding: 15px;
+				  background: lightblue;
+				  background-clip: padding-box;
+				}
+
+				#example3 {
+				  border: 10px dotted black;
+				  padding: 15px;
+				  background: lightblue;
+				  background-clip: content-box;
+				}
+
+				#example11 {
+					  border: 10px double black;
+					  padding: 25px;
+					  background: url(paper.gif);
+					  background-repeat: no-repeat;
+					  background-origin: padding-box;
+					}
+
+					#example21 {
+					  border: 10px double black;
+					  padding: 25px;
+					  background: url(paper.gif);
+					  background-repeat: no-repeat;
+					  background-origin: border-box;
+					}
+
+					#example31 {
+					  border: 10px double black;
+					  padding: 25px;
+					  background: url(paper.gif);
+					  background-repeat: no-repeat;
+					  background-origin: content-box;
+					}
 		</style>
 	</head>
 	<body>
@@ -51,7 +95,7 @@
 
 		<!-- background image -->
 		<h2>Background Image</h2>
-		<p style="background-image:url('clouds.jpg');"> huhuhuhuhuhuhugytfmhghjfhdgjgfdghfdghgfdghjgfds</p>
+		<p id="bgimg"> huhuhuhuhuhuhugytgjgfdghfdghgfdghjgfds</p>
 
 		<!-- picture element --> <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture -->
 		<picture>
@@ -59,6 +103,48 @@
 		  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
 		  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
 		</picture>
+
+
+		<!-- ckgrnd clip css -->
+		<h1>The background-clip Property</h1>
+
+		<p>The background-clip property defines how far the background should extend within an element.</p>
+
+		<p>background-clip: border-box (this is default):</p>
+		<div id="example1">
+		  <p>The background extends behind the border.</p>
+		</div>
+
+		<p>background-clip: padding-box:</p>
+		<div id="example2">
+		  <p>The background extends to the inside edge of the border.</p>
+		</div>
+
+		<p>background-clip: content-box:</p>
+		<div id="example3">
+		  <p>The background extends to the edge of the content box.</p>
+		</div>
+
+		<p><strong>Note:</strong> The background-clip property is not supported in Internet Explorer 8 and earlier versions.</p>
+
+		<!-- bkgrund origin -->
+
+		<h2>background-origin: padding-box (default):</h2>
+<div id="example11">
+  <h2>Hello World</h2>
+  <p>The background image starts from the upper left corner of the padding edge.</p>
+</div>
+
+<h2>background-origin: border-box:</h2>
+<div id="example21">
+  <h2>Hello World</h2>
+  <p>The background image starts from the upper left corner of the border.</p>
+</div>
+
+<h2>background-origin: content-box:</h2>
+<div id="example31">
+  <h2>Hello World</h2>
+  <p>The background image starts from the upper left corner of the content.</p>
 
 	</body>
 </html>

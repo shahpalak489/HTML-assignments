@@ -1,0 +1,15 @@
+body  {
+  background-image:url('../images/bkgrnd.png');
+  background-repeat: repeat-y;/*to repeat bg-img horizontally*/
+}
+/*background-repeat: no-repeat; keep bkgnd-img only 1 time w/o repetation*/
+/*background-repeat: repeat-y; to repeat bg-img vertically}*/
+
+
+/*body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed; to fix bckgrnd image
+}*/
