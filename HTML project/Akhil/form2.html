@@ -5,43 +5,60 @@
 
 	<style>
 		
-		.pad
+		.box
 		{
-			margin: 15px;
+          float: left;
+          height: 350px;
+          width: 200px;
+          margin-top: -10px;
 		}
-		
+
+		.form1
+		{
+			margin-top: 20px;
+		}
+
 	</style>
 </head>
+
 <body>
-
-<h1>Free airport pickup form</h1>
+<h1>Free Airport Pickup Form</h1>
 <hr>
-<form>
-    Free pickup?
-	<input type="radio" name=""> Yes, pick me from airport <br>
-	<input type="radio" name=""> No. I am good
-</form>
+<div class="box" style="width: 200px;">
+	<p> Free pickup? </p> 
+	<p>How are you Arriving? </p>
+	<p> Company	</p>
+	<p> No </p>
+	<p> Alternate no </p>
+	<P> Other  </P>
+	<form>
+		<input type="button" name="" value="BACK"  style="margin-right: 25px; font-size: 25px;"> 
+		<input type="button" name="" value="NEXT" >
+	</form>
+</div>
 
-<form class="pad">
-	how are you arriving? 
-	<select>
-		<option> </option>
-		<option>fds</option>
-		<option> </option>
-		<option>fds</option>
-	</select>
-</form>
+<div class="box">
+	<form>
+		<input type="radio" name=""> Yes, pick me from airport <br>
+		<input type="radio" name=""> No. I am good
+	</form>
 
-<br>
+	<form>	
+		<select class="form1">
+			<option> </option>
+			<option>fds</option>
+			<option> </option>
+			<option>fds</option>
+		</select> <br>
 
-<form>
-	company <input type="text" name="" class="pad"> <br>
-	no <input type="text" name="" class="pad"> <br>
-	alternate no <input type="text" name="" class="pad"> <br>
-	other <input type="text" name="" class="pad"> <br>
-	<input type="button" name="" value="back" class="pad">
-	<input type="button" name="" value="next" class="pad">
-</form>
+		<input type="text" name="" class="form1"> <br>
+		<input type="text" name="" class="form1"> <br>
+		<input type="text" name="" class="form1"> <br>
+		<input type="text" name="" class="form1"> <br>
+	</form>
+</div>
+
+
 
 </body>
 </html>
