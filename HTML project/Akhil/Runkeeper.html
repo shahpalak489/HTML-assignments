@@ -23,37 +23,76 @@
 			margin-right: 50px;
 		}
 
+		.threebox
+		{
+			position: absolute;  
+			height: 300px;
+			width: 275px; 
+			border-radius: 10px;
+			margin-top: 600px; 
+			border: 1px solid green;
+			float: left;
+		}
+
+		.bigbox
+		{
+			height:400px; 
+			width:1200px;
+		}
+
+		.navmenu
+		{
+			display: inline; 
+			margin-left: 40px; 
+			color: #3bbfb8;
+		}
+
+
+		.audiocues
+		{
+			height: 100px; 
+			width: 200px; 
+			border:1px solid black; 
+			float: left; 
+			margin: 10px;
+		}
+
+		.button
+		{
+			border-radius: 25px; 
+			padding: 5px 20px;
+		}
 
 	</style>
 </head>
 
 <body>
-<div  style="height:30px; margin-top: 25px;">
+<div  style="height:50px; width:1200px; border: 1px solid #3bbfb8; margin-top: 25px;">
 	
 
-	<div style="display: inline; margin-left: 600px; color: #3bbfb8;">Get the App
+	<div class="navmenu" style="margin-left: 540px;">Get the App
 	</div>
 
-	<div style="display: inline; margin-left: 40px; color: #3bbfb8;">Upgrade
+	<div class="navmenu">Upgrade
 	</div>
 
-	<div style="display: inline; margin-left: 40px; color: #3bbfb8;">Blog		
+	<div class="navmenu">Blog		
 	</div>
 
-	<div style="display: inline; margin-left: 40px; color: #3bbfb8; ">Support
+	<div class="navmenu">Support
 	</div>
 
-	<div style="display: inline; margin-left: 40px; color: #3bbfb8; ">Store
+	<div class="navmenu">Store
 	</div>
 
-	<div style="display: inline; margin-left: 40px; color: #3bbfb8; ">Sign Up
+	<div class="navmenu ">Sign Up
 	</div>
 
-	<div style="display: inline; margin-left: 40px; color: #3bbfb8; border: 1px solid #3bbfb8; border-radius: 25px; padding: 5px 20px;">Log In
+	<div class="navmenu button" style="border: 1px solid #3bbfb8;">Log In
 	</div>
 </div>
 
-<div  style="border: 1px solid blue; height:1000px; position: relative;">2
+<div  style="border: 1px solid blue; height:1000px; width:1200px; position: relative;">2
 	
 	<div style="position: absolute; height: 300px;width: 500px; top: 100px; left:200px; border: 1px solid green;">3
 
@@ -76,14 +115,14 @@
 		<h2 style="margin-top: 15px; margin-bottom: 0px;">Welcome to the community</h2>
 	</div>
 
-	<div style="position: absolute;  height: 300px;width: 275px; top: 600px; left:175px; border: 1px solid green; ">5
+	<div class="threebox" style="left:175px;">5
 		<h2 style="text-align: center; color: red;">Jorder , 24
 			Woodlandhills,CA </h2>
 		<h3 style="text-align: center;font-size: 15px;"> Big Mattress is being replaced with <br> 
 			 online-only retailers that boast risk-free trial periodtrial period trial periods </h3>
 	</div>
 
-	<div style="position: absolute; height: 300px;width: 275px; top: 600px; left:475px; border: 1px solid green;">6
+	<div class="threebox" style="left:475px;">6
 		<h2 style="text-align: center; color: red;">Ricky , 24
 			Woodlandhills,CA</h2>
 		<h3 style="text-align: center;font-size: 15px;"> Big Mattress is being replaced with <br> 
@@ -91,7 +130,7 @@
 	</div>
 
 
-	<div style="position: absolute; height: 300px;width: 275px; top: 600px; left:775px; border: 1px solid green;">7
+	<div class="threebox" style="left:775px;" >7
 		<h2 style="text-align: center; color: red;">Peter , 24
 			Woodlandhills,CA </h2>
 		<h3 style="text-align: center;font-size: 15px;"> Big Mattress is being replaced with <br> 
@@ -99,7 +138,7 @@
 	</div>
 </div>
 
-<div style="height:400px; background-color: #2772ea;">
+<div class="bigbox" style="background-color: #2772ea;">
 
 	<img src="Images/iphone.jpg" class="floatimageleft">
 
@@ -109,15 +148,14 @@
 	
 </div>
 
-<div style="height:400px; background-color: orange;">
+<div class="bigbox" style="background-color: orange;">
 	<img class=floatimageright src="Images/iphone.jpg">
-
-    <h1>Track Your Workout</h1>
+    <p> Track Your Workout</p>
 
 	<h2> Help Protect and preserve your more than 400 national parks </h2>
 </div>
 
-<div style="height:400px; background-color: #42f45f;" >
+<div class="bigbox" style="background-color: #42f45f;" >
 	<img class=floatimageleft src="Images/iphone.jpg">
 
     <h1>Track Your Workout</h1>
@@ -126,7 +164,7 @@
 	
 </div>
 
-<div style="height:400px; background-color: #f25948;">
+<div class="bigbox" style="background-color: #f25948;">
 	<img class=floatimageright src="Images/iphone.jpg">
 
     <h1>Track Your Workout</h1>
@@ -134,7 +172,7 @@
 	<h2> Help Protect and preserve your more than 400 national parks </h2>
 </div>
 
-<div style="height:400px; background-color: #af9997;">
+<div class="bigbox"  style="background-color: #af9997;">
 	
 	<img class=floatimageleft src="Images/iphone.jpg">
 
@@ -143,28 +181,96 @@
 	<h2> Help Protect and preserve your more than 400 national parks </h2>
 </div>
 
-<div style="height:400px; background-color: #536dc1;">
-	<img class=floatimageright src="Images/iphone.jpg">
+<div class="bigbox" style="background-color: #536dc1;">
+	<h1 style="color: white; text-align: center;"> Thats not all</h1>
 
-    <h1>Track Your Workout</h1>
+	<DIV style="height:250px; width:890px; border:1px solid red; margin: 50px 150px; color: white;">
 
-	<h2> Help Protect and preserve your more than 400 national parks </h2>
+		<div class="audiocues">
+			<h3> Audio cues </h3>
+			<h4> Know your pace and evertuhnf scds </h4>
+		</div>
+
+		<div class="audiocues">
+			<h3> Audio cues </h3>
+			<h4> Know your pace and evertuhnf scds </h4>
+		</div>
+		
+		<div class="audiocues">
+			<h3> Audio cues </h3>
+			<h4> Know your pace and evertuhnf scds </h4>
+		</div>
+		
+		<div class="audiocues">
+			<h3> Audio cues </h3>
+			<h4> Know your pace and evertuhnf scds </h4>
+		</div>
+
+		<div class="audiocues">
+			<h3> Audio cues </h3>
+			<h4> Know your pace and evertuhnf scds </h4>
+		</div>
+
+		<div class="audiocues">
+			<h3> Audio cues </h3>
+			<h4> Know your pace and evertuhnf scds </h4>
+		</div>
+
+		<div class="audiocues">
+			<h3> Audio cues </h3>
+			<h4> Know your pace and evertuhnf scds </h4>
+		</div>
+
+		<div class="audiocues">
+			<h3> Audio cues </h3>
+			<h4> Know your pace and evertuhnf scds </h4>
+		</div>
+		
+	</DIV>
 </div>
 
-<div style="height:400px; background-color: #a3b7a5">
-	<img class=floatimageleft src="Images/iphone.jpg">
+<div class="bigbox"  style="background-color: #a3b7a5">
+	
+	<h1 style="text-align: center;">Sign up for Runkeeper</h1>
+	<form>
+	    	<input type="button" name="" value="Sign up with Facebook" style="background-color: blue; font-size: 15px; color: white; border-radius: 25px; padding: 15px 30px; margin: 10px 0px 0px 300px;">
 
-    <h1>Track Your Workout</h1>
+	    	<input type="button" name="" value="Your name" style="background-color: blue; font-size: 15px; color: white; border-radius: 25px; padding: 15px 30px; margin: 10px 0px 0px 250px;">
 
-	<h2> Help Protect and preserve your more than 400 national parks </h2>
+	    	<input type="button" name="" value="Sign up with google" style="background-color: green; font-size: 15px; color: white; border-radius: 25px; padding: 15px 40px; margin: 20px 0px 0px 300px;">
+
+	    	<input type="button" name="" value="Your password" style="background-color: blue; font-size: 15px; color: white; border-radius: 25px; padding: 15px 30px; margin: 20px 0px 0px 250px;">
+
+	    	<input type="button" name="" value="Your Email" style="background-color: blue; font-size: 15px; color: white; border-radius: 25px; padding: 15px 30px; margin: 10px 0px 0px 770px;">
+
+	    	<input type="button" name="" value="Sign up" style="background-color: blue; font-size: 15px; color: white; border-radius: 25px; padding: 15px 30px; margin: 10px 0px 0px 770px;">
+	    </form>
+
+
 </div>
 
-<div style="height:400px; background-color: black;">
-	<img class=floatimageright src="Images/iphone.jpg">
+<div class="bigbox" style="background-color: black;">
+	<div class="threebox" style="left:175px; margin-top: 50px; ">5
+		<h2 style="text-align: center; color: red;">Jorder , 24
+			Woodlandhills,CA </h2>
+		<h3 style="text-align: center;font-size: 15px;"> Big Mattress is being replaced with <br> 
+			 online-only retailers that boast risk-free trial periodtrial period trial periods </h3>
+	</div>
 
-    <h1>Track Your Workout</h1>
+	<div class="threebox" style="left:475px; margin-top: 50px;">6
+		<h2 style="text-align: center; color: red;">Ricky , 24
+			Woodlandhills,CA</h2>
+		<h3 style="text-align: center;font-size: 15px;"> Big Mattress is being replaced with <br> 
+			 online-only retailers that boast risk-free trial periodtrial period trial periods </h3>
+	</div>
 
-	<h2> Help Protect and preserve your more than 400 national parks </h2>
+
+	<div class="threebox" style="left:775px; margin-top: 50px;" >7
+		<h2 style="text-align: center; color: red;">Peter , 24
+			Woodlandhills,CA </h2>
+		<h3 style="text-align: center;font-size: 15px;"> Big Mattress is being replaced with <br> 
+			 online-only retailers that boast risk-free trial periodtrial period trial periods </h3>
+	</div>	
 </div>
 
 </body>
