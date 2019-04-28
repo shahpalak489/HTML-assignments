@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> js first</title>
+</head>
+<body>
+
+
+
+<form>
+	<input type="button" name="" value="click me" onclick='document.getElementById("one").innerHTML = "Hello JavaScript!"'>
+	<p id="one"> hi how are you? </p>
+</form>
+
+
+<form>
+	<input type="button" name="" value="remove iphone" onclick="document.getElementById('two').src='../images/bg1.jpg'" style="background-color: black; color: yellow">
+	<img src="../images/iphone.jpg" id="two" style="height: 100px; width: 75px;">
+	<input type="button" name="" value="get iphone" onclick="document.getElementById('two').src='../images/iphone.jpg'" style='background-color: black; color: yellow'>
+</form> <br>
+
+
+<form>
+	<input type="button" name="" value="click me" onclick='document.getElementById("three").style.fontSize = "35px"'>
+	<p style="font-size: 10px;" id="three"> to update style property </p>
+</form>
+<br>
+
+<form>
+	<p style="font-size: 10px;" id="four"> add attribute </p>
+	<input type="button" name="" value="click me" onclick='document.getElementById("four").style.display = "none"'>
+</form>
+
+
+<p id="five"> without clicking</p>
+<script>
+document.getElementById("five").style.fontSize="30px"
+</script>
+
+
+<p id="six"> calaulation </p>
+<script>	
+	var a,b,c ;
+	a=10;	b=20;	c=a+b;
+	document.getElementById("six").innerHTML=c 
+</script>
+</body>
+</html>
