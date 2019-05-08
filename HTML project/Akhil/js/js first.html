@@ -124,5 +124,218 @@ if (z>10)
 
 
 
+
+
+
+
+
+<script>
+
+//operator
+var x=2
+var y=5
+var z=10
+
+console.log ("addition");
+console.log (x+y);
+
+console.log ("Subtraction");
+console.log (x-y);
+
+console.log ("Division");
+console.log (x/y);
+
+console.log ("Multiplication");
+console.log (x*y);
+
+console.log ("Modulus");
+console.log (x%y);
+
+console.log ("+=");
+console.log (x+=y);
+
+console.log ("-=");
+console.log (x-=y);
+
+console.log ("*=");
+console.log (x*=y);
+
+console.log ("/=");
+console.log (x/=y);
+
+console.log ("%=");
+console.log (x%=y);
+
+console.log ("Exponentiation");
+console.log (x**y);
+
+
+
+// create and call function
+function aki()
+{
+ console.log ('create and call function');
+ }
+aki();
+
+//local variable
+  function aki2()
+{
+  var a="local variable 2"
+}
+//console.log(a);
+
+//global variable
+var b="global variable 3"
+function aki3()
+{
+ 
+}
+console.log(b);
+
+//global variable updated by function
+var c="global variable 4"
+function aki4()
+{
+  c="global variable 4 value updated"
+}
+console.log(c);
+aki4()
+console.log(c);
+
+// same variable as global and local 
+var d="global variable 5"
+function aki5()
+{
+  var d="local variable 5" 
+  console.log (d)
+}
+aki5()
+console.log (d)
+
+// function with parameter
+function para(a,b)
+{
+  console.log(a+b);
+}
+para(3,4)
+
+//dafault value in Function
+function def(x,y=5)
+{
+  console.log(x*y);
+}
+def(10);
+
+/*function as default value
+function fun()
+{
+  console.log ("faunction as defalut")
+}
+
+function fundef(p=fun(),q)
+{
+  console.log (p+q)
+}
+
+fundef("jhj","hbgvb")*/
+
+
+//if condition
+var a=12
+var b=2
+if (a>b)
+{
+  console.log ("a is bigger")
+}
+
+// if else condition
+var w=54
+var y=5
+if (w>y)
+{
+  console.log ("w is bigger")
+}
+else
+{
+  console.log ("y is bigger")
+}
+
+
+// if else if else statement
+var t=5
+var u=54
+if (t>u)
+{
+  console.log ("t is bigger")
+}
+else if (t<u)
+{
+  console.log ("u is bigger")
+}
+else 
+{
+  console.log ("same")
+}
+
+
+//switch statement
+var b =5;
+switch(b) {
+    case 4:
+    console.log ("b is 4")
+    break
+    case 5:
+    console.log ("b is 5")
+    break
+    case 6:
+    console.log ("b is 6")
+    break
+    case 7:
+    console.log ("b is 7")
+    break
+}
+
+
+//Loop 
+// while Loop
+var a=5
+while (a<10)
+{
+	console.log ("a<10")
+	a=14
+}
+
+
+//do..while loop
+do
+{
+	console.log ("b<10")
+	b=5
+}
+while (b>10)
+
+
+// For Loop
+for (var i=0;i<5;i++)
+{
+	console.log ("i<5");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
 </body>
 </html>
