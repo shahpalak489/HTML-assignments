@@ -2,66 +2,94 @@
 <html>
 <head>
 	<title>calc</title>
-	<link rel="stylesheet" type="text/css" href="new.css">
+	<script type="text/javascript" src="calc_aki.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12" style="height: 600px; border:1px solid red; margin-top: 50px;">
-				<div class="row" style="border:1px solid pink; height: 10%;">
+			<div class="col-lg-12" style="height: 600px; border:0px solid red; margin-top: 50px;">
+				<div class="row" style="border:0px solid pink; height: 10%;">
 					<div class="col-lg-6">
 						
 					</div>
-					<div class="col-lg-1" style="height:100%; border:1px solid green;">
+					<div class="col-lg-1" style="height:100%; border:0px solid green;"> 
 						
+						<form>
+							<input type="button" value="+" style="height: 50px; width: 50px;" onclick="add()" >
+						</form>
+
 					</div>
 					<div class="col-lg-5">
 						
 					</div>
 				</div>
-				<div class="row" style="border:1px solid pink; height: 35%;">
+				<div class="row" style="border:0px solid pink; height: 35%;">
 				</div>
-				<div class="row" style="border:1px solid pink; height: 10%;">
+				<div class="row" style="border:0px solid pink; height: 10%;">
 					<div class="col-lg-2">
 						
 					</div>
-					<div class="col-lg-1" style="height:100%; border:1px solid green;">
+					<div class="col-lg-1" style="height:100%; border:0px solid green;"> 
 						
+						<form>
+							<input type="button" value="*" style="height: 50px; width: 50px;" onclick="multiply()">
+						</form>
+
 					</div>
 					<div class="col-lg-1">
 						
 					</div>
-					<div class="col-lg-1" style="height:100%; border:1px solid green;">
+					<div class="col-lg-1" style="height:100%; border:0px solid green;"> 
 						
+						<form > A
+							<input id="data1" type="number"  style="height: 50px; width: 50px;"> 
+						</form>
+
 					</div>
 					<div class="col-lg-1">
 						
 					</div>
-					<div class="col-lg-1" style="height:100%; border:1px solid green;">
+					<div class="col-lg-1" style="height:100%; border:0px solid green;"> 
 						
+						<form> Output
+							<input id="data3" type="number" style="height: 50px; width:70px;"> 
+						</form>
+
 					</div>
 					<div class="col-lg-1">
 						
 					</div>
-					<div class="col-lg-1" style="height:100%; border:1px solid green;">
+					<div class="col-lg-1" style="height:100%; border:0px solid green;"> 
 						
+						<form> B
+							<input id="data2" type="number"  style="height: 50px; width: 50px;">
+						</form>
+
 					</div>
 					<div class="col-lg-1">
 						
 					</div>
-					<div class="col-lg-1" style="height:100%; border:1px solid green;">
+					<div class="col-lg-1" style="height:100%; border:0px solid green;"> 
 						
+						<form>
+							<input type="button" value="/" style="height: 50px; width: 50px;" onclick="divide()">
+						</form>
+
 					</div>
 				</div>
-				<div class="row" style="border:1px solid pink; height: 35%;">
+				<div class="row" style="border:0px solid pink; height: 35%;">
 				</div>
-				<div class="row" style="border:1px solid pink; height: 10%;">
+				<div class="row" style="border:0px solid pink; height: 10%;">
 					<div class="col-lg-6">
 						
 					</div>
-					<div class="col-lg-1" style="height:100%; border:1px solid green;">
-						
+					<div class="col-lg-1" style="height:100%; border:0px solid green;">
+							
+						<form>
+							<input type="button" value="-" style="height: 50px; width: 50px;" onclick="substract()">
+						</form>
+
 					</div>
 					<div class="col-lg-5">
 						
